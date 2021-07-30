@@ -1,0 +1,122 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{%block title%}
+<link rel="stylesheet" type="text/css" href="/static/css/home.css"/>
+{%endblock%}
+
+
+
+{%block content %}
+   
+
+
+
+    
+<div class ="con " >
+    
+<br>
+<br>
+<div class="container">
+
+
+      {%if user.is_authenticated%}
+                
+     <h1 id="heading" style="text-align: center;color:#80cbc4;">Enter the details to predict...</h1>
+<br>
+
+
+
+<form action="{%url 'result'%}">
+  {% csrf_token %}
+  <div class="form-group" >
+    <label  id="mylabel" for="exampleInputEmail1">Age </label>
+    <input style="color:white;"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter age" name="age">
+    </div>
+    <br>
+    <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">sex  </label>
+    <input style="color:white;"  type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter sex" name="sex">
+    </div>
+    <br>
+    <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">cp </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter cp" name="cp">
+    </div>
+    <br>
+    <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">trestbps </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter tresbps" name="trestbps">
+    </div>
+    <br>
+    <div class="form-group">
+        <label  id="mylabel" for="exampleInputEmail1">chol </label>
+        <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter tresbps" name="chol">
+        </div>
+        <br>
+        <div class="form-group">
+            <label  id="mylabel" for="exampleInputEmail1">fbs </label>
+            <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter tresbps" name="fbs">
+            </div>
+            <br>
+            <div class="form-group">
+            <label  id="mylabel" for="exampleInputEmail1">restecg </label>
+            <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter tresbps" name="restecg">
+            </div>
+            <br>
+    <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">thalach </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="thalach">
+    </div>
+    <br>
+      <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">exang </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="exang">
+    </div>
+    <br>
+        <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">oldpeak </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="oldpeak"> 
+    </div>
+    <br>
+        <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">slope </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="slope">
+    </div>
+    <br>
+        <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">ca </label>
+    <input style="color:white;" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="ca">
+    </div>
+    <br>
+        <div class="form-group">
+    <label  id="mylabel" for="exampleInputEmail1">thal </label>
+    <input  style="color:white;"type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter restecg" name="thal">
+    </div>
+    <br>
+  <button class="btn waves-effect waves-light" style="margin:0 auto;display:table;" type="submit" class="btn btn-primary">Submit</button>
+<br><br><br>
+
+</form>
+</div>
+<div class="background-image">
+<img src="/static/images/home/img3.jpeg">
+</div>
+
+  {%else%}
+  <img src="/static/images/alert.png" style="  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  ">
+  <br>
+  <button class="btn waves-effect waves-light" style="left:42%"><a href="{%url 'login'%}" style="color:white">Please Login First</a></button>
+
+      {%endif %}
+
+</div>
+
+
+
+
+{%endblock%}

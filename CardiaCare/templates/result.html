@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{%block title%}
+
+<link rel="stylesheet" type="text/css" href="/static/css/result.css"/>
+
+{%endblock%}
+
+
+{%block content %}
+
+  
+<br><br>
+<div id="results" class="con">
+
+  <h1 style="text-align:center;"><b>Results</h1>
+
+  
+   
+    {% if ans %}
+    
+    <img src="/static/images/results/Unhealthy.gif"  id="gif1" width="20%" height="20%" style="display: block; margin-left: auto;margin-right: auto;" alt=""/>
+    <h1 style="text-align:center;">You have a heart disease ☹</h1>
+    {%else%}
+    <img src="/static/images/results/healthy.png" width="20%" height="20%"  style="display: block; margin-left: auto;margin-right: auto;" alt=""/>
+    <h1 style="text-align:center;">Your Heart is healthy </h1>
+    {% endif %}
+    
+    
+    <div class="background-image">
+      <img src="/static/images/results/tenor (1).gif">
+      </div>
+      
+
+
+</div>
+<br>
+<!-- 
+57,0,0,120,354,0,1,163,1,0.6,2,0,2,1 -->
+
+
+
+
+
+{%endblock%}

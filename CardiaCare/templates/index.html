@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{%block title%}
+<link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" type="text/css" href="/static/css/index.css"/>
+
+       
+{%endblock%}
+
+
+
+{%block content %}
+<div class="containr">
+
+<h2 class="heading">Predict your chance of having a heart disease because prevention is better than cure!
+
+</h2>
+
+<div class="mybutton">
+<a class="waves-effect waves-light red btn-large " href="#about" >Find Out More</a>
+<a class="waves-effect waves-light red btn-large " href="{%url 'home'%}" >Predict</a>
+</div>
+
+
+  <div class="parallax-container" style="padding-top:5px;">
+    <div class="parallax"><img src="/static/images/index/img1.png" style="filter: blur(2px);filter: brightness(40%);" ></div>
+  </div>
+
+</div>
+
+
+
+<section id="about" class="text-gray-600 body-font" style="padding-top:-10%">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h2 class="text-xl text-grey-500 tracking-widest font-medium title-font mb-1" style="font-size:40px">-About-</h2>
+      <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Heart Disese Prediction System</h1>
+      <p class="lg:w-2/3 mx-auto leading-relaxed text-base">Heart Disease is the leading cause of the death all over the world. Prediction of Heart Attack can be a very complicated process.​
+
+        In healthcare, especially in the field of cardiology, timely and efficient detection of heart disease plays a key role. Early prediction of heart disease can help in curtailing the causes of mortality. ​
+        
+        By the help of machine learning algorithm we can predict the Heart Health.​</p>
+    </div>
+     </div>
+</section>
+
+<section class="text-gray-600 body-font" style="margin-top:-10%">
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
+      <img alt="feature" class="object-cover object-center h-full w-full" style="height: 70%;width: 70%;margin-left:120px" src="/static/images/index/img3.jfif">
+    </div>
+    <div class="flex flex-col flex-wrap lg:py-6 -mb-10 lg:w-1/2 lg:pl-12 lg:text-left text-center">
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          <p class="leading-relaxed text-base">Coronary heart disease (CHD) is a condition in which the coronary arteries become clogged, resulting in symptoms such as angina, chest pain, and heart attacks. </p>
+         
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          
+          <p class="leading-relaxed text-base">Cardiac Arrest is one of the biggest causes of morbidity and mortality among the population of the world. ​
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+          </svg>
+        </div>
+        <div class="flex-grow">
+            <p class="leading-relaxed text-base">Heart disease is even highlighted as a silent killer which leads to death of a person without any obvious symptoms. </p>
+        
+        </div>
+      </div>
+      <div class="flex flex-col mb-10 lg:items-start items-center">
+        <div class="w-12 h-12 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5">
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-6 h-6" viewBox="0 0 24 24">
+            <circle cx="6" cy="6" r="3"></circle>
+            <circle cx="6" cy="18" r="3"></circle>
+            <path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
+          </svg>
+        </div>
+        <div class="flex-grow">
+          
+          <p class="leading-relaxed text-base">Hence prediction of cardiovascular disease is regarded as one of the most important subjects in the section of clinical data analysis.​</p> ​
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="parallax-container" style="height: 500px;margin-top: -18%;">
+  <div class="parallax"><img src="/static/images/index/img4.jpg" style="filter: brightness(40%);" ></div>
+</div>
+
+
+
+
+<section class="text-gray-600 body-font" style="margin-left:30px;margin-right:30px;">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
+      </div>
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1 class="text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0" style="font-size:50px">Analysis Result Based on Dataset Available</h1>
+      </div>
+    </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-67 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full"  src="/static/images/index/img5.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Plotting the most important feature</h2>
+        <p class="text-base leading-relaxed mt-2">We found out that among all the attributes, chest pain is the most important feature in our dataset.</p>
+         
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-67 overflow-hidden" >
+          <img alt="content" class="object-cover object-center h-full w-full" src="/static/images/index/img6.jpg" >
+        </div>
+          
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5" style="padding-top:10px">Comparing the target variable(class)</h2>
+        <p class="text-base leading-relaxed mt-2">According to the above bar graph, there are 165 people suffering from heart disease and 138 persons in good heart health.</p>
+      
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-67 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="/static/images/index/img7.jpg">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">. Comparison of target with sex</h2>
+        <p class="text-base leading-relaxed mt-2">This graph displays the results in two partitions, one for those with heart disease and one for people without heart disease. Then, in each partition, a male and female partition is created.</p>
+       
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section  class="text-gray-600 body-font" style="margin-top:-2%;margin-left:30px;margin-right:30px;">
+  <div class="h-1 bg-gray-200 rounded overflow-hidden">
+    <div class="w-24 h-full bg-indigo-500"></div>
+  </div>
+  <div class="container px-5 py-24 mx-auto flex flex-wrap">
+    <div class="flex flex-wrap -mx-4 mt-auto mb-auto lg:w-1/2 sm:w-2/3 content-start sm:pr-10">
+      <div class="w-full sm:p-4 px-4 mb-6">
+        <h1 class="title-font font-medium text-5xl mb-2 text-gray-900" style=:>Comparing Results- KNN vs Decision tree</h1>
+        <div class="leading-relaxed">We found out that both the algorithms worked pretty well but KNN outperformed Decision tree with 86%(approx.) accuracy results. </div>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">76 %</h2>
+        <p class="leading-relaxed">Decission Tree</p>
+      </div>
+      <div class="p-4 sm:w-1/2 lg:w-1/4 w-1/2">
+        <h2 class="title-font font-medium text-3xl text-gray-900">86 %</h2>
+        <p class="leading-relaxed">KNN</p>
+      </div>
+     
+    </div>
+    <div class="lg:w-1/2 sm:w-1/3 h-80  rounded-lg overflow-hidden mt-6 sm:mt-0">
+      <img id="resultimage" class="object-cover object-center "  src="/static/images/index/img8.jpg" width="400" height="500" alt="stats">
+    </div>
+  </div>
+</section>
+
+
+
+
+<section class="text-gray-600 body-font" style="margin-top: -8%;">
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-20">
+      <h1 class="sm:text-3xl text-2xl font-medium title-font  text-gray-900">Our Team</h1>
+    </div>
+    <div class="flex flex-wrap -m-2">
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/80x80">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Mayank Ramani</h2>
+            <p class="text-gray-500">Btech.</p>
+          </div>
+        </div>
+      </div>
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/84x84">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Priyam Maheshwari</h2>
+            <p class="text-gray-500">Btech.</p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="p-2 lg:w-1/3 md:w-1/2 w-full">
+        <div class="h-full flex items-center border-gray-200 border p-4 rounded-lg">
+          <img alt="team" class="w-16 h-16 bg-gray-100 object-cover object-center flex-shrink-0 rounded-full mr-4" src="https://dummyimage.com/108x98">
+          <div class="flex-grow">
+            <h2 class="text-gray-900 title-font font-medium">Subhanshu Tripathi</h2>
+            <p class="text-gray-500">Btech.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<footer class="page-footer" id="myfooter">
+  <div class="container">
+    <div class="row"> 
+      <div class="col l6 s12">
+        <a href="{%url 'index'%}" class="brand-logo">
+          <img class="img-flui"  style="height: 129px;" src="/static/images/logo2.PNG" height="122px" alt="">
+      </a>
+        <p class="grey-text text-lighten-4">Heart Disease Prediction Syatem</p>
+      </div>
+
+<!--  -->
+
+
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Quick Links</h5>
+        <ul>
+          <li><a id="quicklinks"  class="grey-text text-lighten-3" href="{%url 'index'%}">Home</a></li>
+          <li><a  id="quicklinks" class="grey-text text-lighten-3" href="#about">About</a></li>
+          <li><a id="quicklinks"  class="grey-text text-lighten-3" href="{%url 'home'%}">Predict</a></li>
+        </ul>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-instagram"></a>
+
+
+
+
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright">
+    <div class="container">
+    © 2021 Copyright Text
+    </div>
+  </div>
+</footer>
+    
+
+{%endblock%}
